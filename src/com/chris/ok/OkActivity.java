@@ -13,7 +13,7 @@ public class OkActivity extends DroidGap {
 	private final ICouchbaseDelegate couchCallbackHandler = new ICouchbaseDelegate() {
 	    @Override
 	    public void couchbaseStarted(String host, int port) {
-	        me.loadUrl("http://127.0.0.1:"+port+"/photodemo-mom/_design/photodemo/index.html");
+	        me.loadUrl("http://127.0.0.1:"+port+"/photodemo-mom/_design/photodemo/index.html#mom");
 	    }
 
 	    @Override
@@ -31,7 +31,6 @@ public class OkActivity extends DroidGap {
         super.onCreate(savedInstanceState);
         me = this;
         startCouchbase();
-//        setContentView(R.layout.main);
         super.loadUrl("file:///android_asset/www/index.html");
     }
 }
