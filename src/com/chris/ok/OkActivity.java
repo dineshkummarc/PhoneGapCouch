@@ -31,6 +31,6 @@ public class OkActivity extends DroidGap {
         super.onCreate(savedInstanceState);
         me = this;
         startCouchbase();
-        super.loadUrl("file:///android_asset/www/index.html");
+//        setContentView(R.layout.main);
     }
 }
